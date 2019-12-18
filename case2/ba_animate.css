@@ -1,0 +1,69 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 2
+
+   Big Apple Physics Animation Styles
+   Author: claudio rios 
+   Date:   12/17/19
+
+
+
+/* Filename: ba_animate.css */
+
+
+/* Transition Styles */
+nav a:horizontal{
+   background:url(ba_target.png)center no-repeat;
+   background-size:0%;
+   color:rgb(253,240,233);
+}
+nav a:hover{
+background-size:100%;
+color:rgb(244,130,130);
+}
+@keyframes moveRed{
+   0%{left:0px; filter:drop-shadow(rgb(51,51,51)-40px 20px 25px);}
+   49%{transform: scaleX(1);}
+   50%{left: 380px;filter: drops-hadow(rgb(51,51,51)0px 0px 0px); transform: scaleX(0.4);}
+   51%{transform: scaleX(1);}
+   100%{left: 0px; filter: drop-Shadow(rgb(51,51,51)-40px 20px 25px);}
+   
+@keyframes moveBlue{
+   0%{right: 0px; filter: drop-Shadow(rgb(51,51,51)40px 20px 26px);}
+   49%{transform: scaleX(1);}
+   50%{right:380px; filter:drop-shadow(rgb(51,51,51))0px 0px 0px);transform: scaleX(0.4);}
+   51%{transform: scaleX(1);}
+   100%{right: -700px; filter: drop-shadow(rgb(51,51,51)120px 120px 20px);}
+
+@keyframes showText{
+      0%{opacity: 0;}
+      49%{opacity: 1;}
+      51%{opacity: 1;}
+      100%{opacity:0;}
+   }
+@keyframes hidetext{
+0%{opacity:1;}
+49%{opacity:1;}
+51%{opacity:0;}
+100%{opacity: 0;}
+}
+
+ img#redBall{
+   animation: moveRed 5s linear infinite;
+}
+ img#blueBall{
+    animation: moveBlue 5s linear infinite;
+ }
+div#redSpeed1{
+   animation: hideText 5s linear infinite;
+}
+div#blueSpeed1{
+   animation: hideText 5s linear infinite;
+}
+div#redSpeed2{
+   animation: showText 5s linear infinite;
+}
+div#blueSpeed2{
+   animation: showText 5s linear infinite;
+}
