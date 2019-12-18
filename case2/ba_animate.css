@@ -25,7 +25,7 @@ color:rgb(244,130,130);
 @keyframes moveRed{
    0%{left:0px; filter:drop-shadow(rgb(51,51,51)-40px 20px 25px);}
    49%{transform: scaleX(1);}
-   50%{left: 380px;filter: drops-hadow(rgb(51,51,51)0px 0px 0px); transform: scaleX(0.4);}
+   50%{left: 380px;filter: drop-shadow(rgb(51,51,51)0px 0px 0px); transform: scaleX(0.4);}
    51%{transform: scaleX(1);}
    100%{left: 0px; filter: drop-Shadow(rgb(51,51,51)-40px 20px 25px);}
    
