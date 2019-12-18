@@ -1,0 +1,103 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 3
+
+   Pixal Arts and Entertainment Animation Styles
+   Author: 
+   Date:   
+
+   Filename: 
+   
+   Sprite animation is created using the paa_bat.png, 
+   paa_bfly.png, and paa_fox.png image files.
+   
+   paa_bat.png has 40 frames
+   paa_bfly.png has 34 frames
+   paa_fox.png has 28 frames
+
+*/
+
+
+/* Transition Effects */
+nav#gameLinks{
+position: relative;
+color:  rgb(255, 194, 99);
+}
+nav#gameLinks a::after{
+   content:"";
+   position: absolute;
+   top:100%;
+   left:0px;
+   width:0%;
+   height:8px;
+   background: linear-gradient(to right, rgb(237, 243, 71) rgb(188, 74, 0);
+   border-radius: 4px;
+   opacity: 0;
+}
+nav#gamelinks a:hover::after{
+   opacity: 1;
+   width: 100%;
+   
+}
+div #butterfly{
+   width:35px;
+   height:35px;
+   top:60px;
+   left:-50px;
+   background: url(paa_bfly.png)no-repeat;
+   size:100%;
+
+}
+div #fox{
+   width: 280px;
+   height: 360px;
+   bottom: 10px;
+   right:10px;
+   background: url(paa_fox.png) no-repeat;
+   size:100%;
+}
+
+
+
+/* Sprite Styles */
+
+.sprite #div {
+   position: absolute;
+
+}
+#bat{
+   widows: 40px;
+   height: 40px;
+   top:100px;
+   left:-50px;
+   background: url(paa_bat.png)left center no-repeat;{
+      size: 100%;
+      
+   }
+}
+
+/* Animation Styles */
+playsprite{
+   background-position: right, center;
+   time:100%;
+
+}
+ @keyframes flyRight{
+   time:25% top:150px;
+   time:50% top:55px;
+   time:65% top:120px;
+   time:90% top:50px;
+   time:100% top:80px;
+ }
+ div #fox playsprite{
+    animation-delay: 3.5s;
+    animation-duration: 8s;
+    value:27;
+    loop:infinate;
+ }
+div #butterfly{
+   animation-delay: 3s;
+   animation-duration: 6s;
+   
+}
